@@ -11,7 +11,7 @@ print("Model 1 Summary:")
 summary(model1)
 
 
-model2 <- lm(CNTTDHH ~ WRKCOUNT + HHVEHCNT + HHFAMINC +HHFAMINC+ HHSIZE, data = hh_ga)
+model2 <- lm(CNTTDHH ~ WRKCOUNT + HHVEHCNT + HHFAMINC + HHSIZE, data = hh_ga)
 print("Model 2 Summary:")
 summary(model2)
 

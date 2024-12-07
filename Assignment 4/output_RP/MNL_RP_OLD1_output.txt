@@ -1,0 +1,290 @@
+Model run by User using Apollo 0.3.4 on R 4.4.1 for Windows.
+Please acknowledge the use of Apollo by citing Hess & Palma (2019)
+  DOI 10.1016/j.jocm.2019.100170
+  www.ApolloChoiceModelling.com
+
+Model name                                  : MNL_RP
+Model description                           : Simple MNL model on mode choice RP data
+Model run at                                : 2024-12-08 04:14:59.112065
+Estimation method                           : bgw
+Model diagnosis                             : Singular convergence
+Number of individuals                       : 500
+Number of rows in database                  : 1000
+Number of modelled outcomes                 : 1000
+
+Number of cores used                        :  1 
+Model without mixing
+
+LL(start)                                   : -1170.86
+LL at equal shares, LL(0)                   : -1170.86
+LL at observed shares, LL(C)                : -1085.14
+LL(final)                                   : -1025
+Rho-squared vs equal shares                  :  0.1246 
+Adj.Rho-squared vs equal shares              :  0.1135 
+Rho-squared vs observed shares               :  0.0554 
+Adj.Rho-squared vs observed shares           :  0.0462 
+AIC                                         :  2076.01 
+BIC                                         :  2139.81 
+
+Estimated parameters                        : 13
+Time taken (hh:mm:ss)                       :  00:00:0.36 
+     pre-estimation                         :  00:00:0.18 
+     estimation                             :  00:00:0.15 
+     post-estimation                        :  00:00:0.02 
+Iterations                                  :  9 (Singular convergence) 
+
+Unconstrained optimisation.
+
+Estimates:
+               Estimate        s.e.   t.rat.(0)    Rob.s.e. Rob.t.rat.(0)
+asc_car       -1.720851          NA          NA          NA            NA
+asc_bus        0.223884          NA          NA          NA            NA
+asc_air        1.042154          NA          NA          NA            NA
+asc_rail       0.659247          NA          NA          NA            NA
+b_tt_car      -0.002308          NA          NA          NA            NA
+b_tt_bus      -0.009598          NA          NA          NA            NA
+b_tt_air      -0.021174          NA          NA          NA            NA
+b_tt_rail     -0.013027          NA          NA          NA            NA
+b_access      -0.011491          NA          NA          NA            NA
+b_cost_car    -0.017961          NA          NA          NA            NA
+b_cost_bus    -0.039937          NA          NA          NA            NA
+b_cost_air    -0.034617          NA          NA          NA            NA
+b_cost_rail   -0.036307          NA          NA          NA            NA
+
+
+Overview of choices for MNL model component :
+                                    car    bus    air   rail
+Times available                  778.00 902.00 752.00 874.00
+Times chosen                     332.00 126.00 215.00 327.00
+Percentage chosen overall         33.20  12.60  21.50  32.70
+Percentage chosen when available  42.67  13.97  28.59  37.41
+
+
+
+Classical covariance matrix:
+                asc_car     asc_bus     asc_air    asc_rail    b_tt_car    b_tt_bus    b_tt_air   b_tt_rail    b_access  b_cost_car  b_cost_bus
+asc_car              NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+asc_bus              NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+asc_air              NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+asc_rail             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_car             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_bus             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_air             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_rail            NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_access             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_car           NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_bus           NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_air           NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_rail          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+             b_cost_air b_cost_rail
+asc_car              NA          NA
+asc_bus              NA          NA
+asc_air              NA          NA
+asc_rail             NA          NA
+b_tt_car             NA          NA
+b_tt_bus             NA          NA
+b_tt_air             NA          NA
+b_tt_rail            NA          NA
+b_access             NA          NA
+b_cost_car           NA          NA
+b_cost_bus           NA          NA
+b_cost_air           NA          NA
+b_cost_rail          NA          NA
+
+Robust covariance matrix:
+                asc_car     asc_bus     asc_air    asc_rail    b_tt_car    b_tt_bus    b_tt_air   b_tt_rail    b_access  b_cost_car  b_cost_bus
+asc_car              NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+asc_bus              NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+asc_air              NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+asc_rail             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_car             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_bus             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_air             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_rail            NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_access             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_car           NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_bus           NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_air           NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_rail          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+             b_cost_air b_cost_rail
+asc_car              NA          NA
+asc_bus              NA          NA
+asc_air              NA          NA
+asc_rail             NA          NA
+b_tt_car             NA          NA
+b_tt_bus             NA          NA
+b_tt_air             NA          NA
+b_tt_rail            NA          NA
+b_access             NA          NA
+b_cost_car           NA          NA
+b_cost_bus           NA          NA
+b_cost_air           NA          NA
+b_cost_rail          NA          NA
+
+Classical correlation matrix:
+                asc_car     asc_bus     asc_air    asc_rail    b_tt_car    b_tt_bus    b_tt_air   b_tt_rail    b_access  b_cost_car  b_cost_bus
+asc_car              NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+asc_bus              NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+asc_air              NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+asc_rail             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_car             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_bus             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_air             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_rail            NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_access             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_car           NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_bus           NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_air           NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_rail          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+             b_cost_air b_cost_rail
+asc_car              NA          NA
+asc_bus              NA          NA
+asc_air              NA          NA
+asc_rail             NA          NA
+b_tt_car             NA          NA
+b_tt_bus             NA          NA
+b_tt_air             NA          NA
+b_tt_rail            NA          NA
+b_access             NA          NA
+b_cost_car           NA          NA
+b_cost_bus           NA          NA
+b_cost_air           NA          NA
+b_cost_rail          NA          NA
+
+Robust correlation matrix:
+                asc_car     asc_bus     asc_air    asc_rail    b_tt_car    b_tt_bus    b_tt_air   b_tt_rail    b_access  b_cost_car  b_cost_bus
+asc_car              NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+asc_bus              NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+asc_air              NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+asc_rail             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_car             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_bus             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_air             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_tt_rail            NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_access             NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_car           NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_bus           NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_air           NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+b_cost_rail          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA          NA
+             b_cost_air b_cost_rail
+asc_car              NA          NA
+asc_bus              NA          NA
+asc_air              NA          NA
+asc_rail             NA          NA
+b_tt_car             NA          NA
+b_tt_bus             NA          NA
+b_tt_air             NA          NA
+b_tt_rail            NA          NA
+b_access             NA          NA
+b_cost_car           NA          NA
+b_cost_bus           NA          NA
+b_cost_air           NA          NA
+b_cost_rail          NA          NA
+
+ 20 most extreme outliers in terms of lowest average per choice prediction:
+  ID Avg prob per choice
+ 227          0.09059069
+ 166          0.10440615
+ 253          0.11466415
+   2          0.12488042
+ 112          0.12544171
+ 462          0.12628626
+ 317          0.13875342
+ 267          0.15120004
+  86          0.15369333
+ 231          0.15660416
+ 300          0.15793419
+ 381          0.15826017
+ 453          0.15979430
+ 417          0.16056681
+  43          0.16102970
+  35          0.16215149
+ 108          0.16240528
+ 287          0.16449658
+ 480          0.16491334
+ 413          0.16492700
+
+Changes in parameter estimates from starting values:
+                Initial    Estimate  Difference
+asc_car           0.000   -1.720851   -1.720851
+asc_bus           0.000    0.223884    0.223884
+asc_air           0.000    1.042154    1.042154
+asc_rail          0.000    0.659247    0.659247
+b_tt_car          0.000   -0.002308   -0.002308
+b_tt_bus          0.000   -0.009598   -0.009598
+b_tt_air          0.000   -0.021174   -0.021174
+b_tt_rail         0.000   -0.013027   -0.013027
+b_access          0.000   -0.011491   -0.011491
+b_cost_car        0.000   -0.017961   -0.017961
+b_cost_bus        0.000   -0.039937   -0.039937
+b_cost_air        0.000   -0.034617   -0.034617
+b_cost_rail       0.000   -0.036307   -0.036307
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                                    
+modelName              "MNL_RP"                                 
+modelDescr             "Simple MNL model on mode choice RP data"
+indivID                "ID"                                     
+outputDirectory        "output_RP/"                             
+debug                  "FALSE"                                  
+nCores                 "1"                                      
+workInLogs             "FALSE"                                  
+seed                   "13"                                     
+mixing                 "FALSE"                                  
+HB                     "FALSE"                                  
+noValidation           "FALSE"                                  
+noDiagnostics          "FALSE"                                  
+calculateLLC           "TRUE"                                   
+analyticHessian        "FALSE"                                  
+memorySaver            "FALSE"                                  
+panelData              "TRUE"                                   
+analyticGrad           "TRUE"                                   
+analyticGrad_manualSet "FALSE"                                  
+overridePanel          "FALSE"                                  
+preventOverridePanel   "FALSE"                                  
+noModification         "FALSE"                                  
+
+Hessian routines attempted
+--------------------------
+none
+
+
+apollo_probabilities
+----------------------
+function(apollo_beta, apollo_inputs, functionality="estimate"){
+  
+  ### Attach inputs and detach after function exit
+  apollo_attach(apollo_beta, apollo_inputs)
+  on.exit(apollo_detach(apollo_beta, apollo_inputs))
+  
+  ### Create list of probabilities P
+  P = list()
+  
+  ### List of utilities: these must use the same names as in mnl_settings, order is irrelevant
+  V = list()
+  V[["car"]]  = asc_car  + b_tt_car  * time_car                           + b_cost_car * cost_car
+  V[["bus"]]  = asc_bus  + b_tt_bus  * time_bus  + b_access * access_bus  + b_cost_bus * cost_bus 
+  V[["air"]]  = asc_air  + b_tt_air  * time_air  + b_access * access_air  + b_cost_air * cost_air   
+  V[["rail"]] = asc_rail + b_tt_rail * time_rail + b_access * access_rail + b_cost_rail * cost_rail  
+  
+  ### Define settings for MNL model component
+  mnl_settings = list(
+    alternatives  = c(car=1, bus=2, air=3, rail=4), 
+    avail         = list(car=av_car, bus=av_bus, air=av_air, rail=av_rail), 
+    choiceVar     = choice,
+    utilities     = V
+  )
+  
+  ### Compute probabilities using MNL model
+  P[["model"]] = apollo_mnl(mnl_settings, functionality)
+  
+  ### Take product across observation for same individual
+  P = apollo_panelProd(P, apollo_inputs, functionality)
+  
+  ### Prepare and return outputs of function
+  P = apollo_prepareProb(P, apollo_inputs, functionality)
+  return(P)
+}

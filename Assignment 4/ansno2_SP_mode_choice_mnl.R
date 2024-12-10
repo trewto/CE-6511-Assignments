@@ -32,10 +32,7 @@ apollo_beta=c(asc_car   = 0,
               b_tt_air  = 0,
               b_tt_rail = 0,
               b_access  = 0,
-              b_cost_car  = 0,
-              b_cost_bus = 0 ,
-              b_cost_air = 0 ,
-              b_cost_rail = 0,
+              b_cost = 0,
               b_female_car= 0, 
               b_female_bus  = 0,  # Female dummy for bus
               b_female_rail = 0,  # Female dummy for rail
@@ -62,10 +59,10 @@ apollo_probabilities=function(apollo_beta, apollo_inputs, functionality="estimat
   
   ### List of utilities: these must use the same names as in mnl_settings, order is irrelevant
   V = list()
-  V[["car"]]  = asc_car  + b_tt_car  * time_car                           + b_cost_car * cost_car   + b_female_car * female
-  V[["bus"]]  = asc_bus  + b_tt_bus  * time_bus  + b_access * access_bus  + b_cost_bus * cost_bus  + b_female_bus * female
-  V[["air"]]  = asc_air  + b_tt_air  * time_air  + b_access * access_air  + b_cost_air * cost_air   + b_female_air * female
-  V[["rail"]] = asc_rail + b_tt_rail * time_rail + b_access * access_rail + b_cost_rail * cost_rail   + b_female_rail * female
+  V[["car"]]  = asc_car  + b_tt_car  * time_car                           + b_cost * cost_car   + b_female_car * female
+  V[["bus"]]  = asc_bus  + b_tt_bus  * time_bus  + b_access * access_bus  + b_cost * cost_bus  + b_female_bus * female
+  V[["air"]]  = asc_air  + b_tt_air  * time_air  + b_access * access_air  + b_cost * cost_air   + b_female_air * female
+  V[["rail"]] = asc_rail + b_tt_rail * time_rail + b_access * access_rail + b_cost * cost_rail   + b_female_rail * female
   
   ### Define settings for MNL model component
   mnl_settings = list(
@@ -118,15 +115,15 @@ apollo_saveOutput(model)
 estimates = model$estimate
 
 # Calculate VTT and VAT
-vtt_car  = -estimates["b_tt_car"] / estimates["b_cost_car"] * 60
-vtt_bus  = -estimates["b_tt_bus"] / estimates["b_cost_bus"] * 60
-vtt_air  = -estimates["b_tt_air"] / estimates["b_cost_air"] * 60
-vtt_rail = -estimates["b_tt_rail"] / estimates["b_cost_rail"] * 60
+vtt_car  = -estimates["b_tt_car"] / estimates["b_cost"] * 60
+vtt_bus  = -estimates["b_tt_bus"] / estimates["b_cost"] * 60
+vtt_air  = -estimates["b_tt_air"] / estimates["b_cost"] * 60
+vtt_rail = -estimates["b_tt_rail"] / estimates["b_cost"] * 60
 
-vat_car  = -estimates["b_access"] / estimates["b_cost_car"] * 60
-vat_bus  = -estimates["b_access"] / estimates["b_cost_bus"] * 60
-vat_air  = -estimates["b_access"] / estimates["b_cost_air"] * 60
-vat_rail = -estimates["b_access"] / estimates["b_cost_rail"] * 60
+vat_car  = -estimates["b_access"] / estimates["b_cost"] * 60
+vat_bus  = -estimates["b_access"] / estimates["b_cost"] * 60
+vat_air  = -estimates["b_access"] / estimates["b_cost"] * 60
+vat_rail = -estimates["b_access"] / estimates["b_cost"] * 60
 
 # Create a table for VTT and VAT
 vtt_vat_table = data.frame(

@@ -5,7 +5,7 @@ Please acknowledge the use of Apollo by citing Hess & Palma (2019)
 
 Model name                                  : MNL_SP
 Model description                           : Simple MNL model on mode choice RP data
-Model run at                                : 2024-12-11 03:36:54.949769
+Model run at                                : 2024-12-11 03:36:28.121699
 Estimation method                           : bgw
 Model diagnosis                             : Relative function convergence
 Optimisation diagnosis                      : Maximum found
@@ -31,10 +31,10 @@ AIC                                         :  11545.87
 BIC                                         :  11628.11 
 
 Estimated parameters                        : 12
-Time taken (hh:mm:ss)                       :  00:00:2.72 
-     pre-estimation                         :  00:00:0.43 
-     estimation                             :  00:00:0.58 
-     post-estimation                        :  00:00:1.7 
+Time taken (hh:mm:ss)                       :  00:00:2.62 
+     pre-estimation                         :  00:00:0.38 
+     estimation                             :  00:00:0.34 
+     post-estimation                        :  00:00:1.9 
 Iterations                                  :  9  
 
 Unconstrained optimisation.

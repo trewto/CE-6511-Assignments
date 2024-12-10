@@ -1,0 +1,15 @@
+"","Estimate","Std.err.","t-ratio(0)","Rob.std.err.","Rob.t-ratio(0)"
+"asc_car",0,NA,NA,NA,NA
+"asc_bus",0.0983280532906252,NA,NA,NA,NA
+"asc_air",0.906034922044875,NA,NA,NA,NA
+"asc_rail",-1.15353313380212,NA,NA,NA,NA
+"b_tt_car",-0.00996269921124833,NA,NA,NA,NA
+"b_tt_bus",-0.016009929153897,NA,NA,NA,NA
+"b_tt_air",-0.0192172023000343,NA,NA,NA,NA
+"b_tt_rail",-0.00313718093006239,NA,NA,NA,NA
+"b_access",-0.0226477310274106,NA,NA,NA,NA
+"b_cost",-0.0546493126585066,NA,NA,NA,NA
+"b_female_car",2.68079335107577,NA,NA,NA,NA
+"b_female_bus",2.81586006257426,NA,NA,NA,NA
+"b_female_rail",2.85497413801893,NA,NA,NA,NA
+"b_female_air",2.92228613913331,NA,NA,NA,NA

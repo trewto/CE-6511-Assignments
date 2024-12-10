@@ -1,0 +1,401 @@
+Model run by User using Apollo 0.3.4 on R 4.4.1 for Windows.
+Please acknowledge the use of Apollo by citing Hess & Palma (2019)
+  DOI 10.1016/j.jocm.2019.100170
+  www.ApolloChoiceModelling.com
+
+Model name                                  : MNL_SP
+Model description                           : Simple MNL model on mode choice RP data
+Model run at                                : 2024-12-08 06:20:31.429108
+Estimation method                           : bgw
+Model diagnosis                             : Relative function convergence
+Optimisation diagnosis                      : Maximum found
+     hessian properties                     : Negative definite
+     maximum eigenvalue                     : -1.031172
+     reciprocal of condition number         : 8.97529e-09
+Number of individuals                       : 500
+Number of rows in database                  : 7000
+Number of modelled outcomes                 : 7000
+
+Number of cores used                        :  1 
+Model without mixing
+
+LL(start)                                   : -8196.02
+LL at equal shares, LL(0)                   : -8196.02
+LL at observed shares, LL(C)                : -6706.94
+LL(final)                                   : -5752.08
+Rho-squared vs equal shares                  :  0.2982 
+Adj.Rho-squared vs equal shares              :  0.2964 
+Rho-squared vs observed shares               :  0.1424 
+Adj.Rho-squared vs observed shares           :  0.1406 
+AIC                                         :  11534.17 
+BIC                                         :  11636.97 
+
+Estimated parameters                        : 15
+Time taken (hh:mm:ss)                       :  00:00:2.25 
+     pre-estimation                         :  00:00:0.25 
+     estimation                             :  00:00:0.25 
+     post-estimation                        :  00:00:1.75 
+Iterations                                  :  9  
+
+Unconstrained optimisation.
+
+Estimates:
+                 Estimate        s.e.   t.rat.(0)    Rob.s.e. Rob.t.rat.(0)
+asc_car          0.000000          NA          NA          NA            NA
+asc_bus          2.659537    0.864899      3.0750    0.797350        3.3355
+asc_air          1.711008    0.619549      2.7617    0.642922        2.6613
+asc_rail         0.632415    0.650112      0.9728    0.630215        1.0035
+b_tt_car        -0.008515  8.1063e-04    -10.5046  8.3137e-04      -10.2426
+b_tt_bus        -0.018523    0.001718    -10.7829    0.001635      -11.3320
+b_tt_air        -0.017730    0.002865     -6.1886    0.002764       -6.4136
+b_tt_rail       -0.006387    0.002106     -3.0330    0.002056       -3.1072
+b_access        -0.020716    0.002983     -6.9451    0.002905       -7.1309
+b_cost_car      -0.037863    0.005727     -6.6110    0.005937       -6.3773
+b_cost_bus      -0.078502    0.009172     -8.5585    0.008875       -8.8456
+b_cost_air      -0.053051    0.002059    -25.7704    0.002403      -22.0772
+b_cost_rail     -0.058887    0.002604    -22.6164    0.002723      -21.6290
+b_female_car     0.000000          NA          NA          NA            NA
+b_female_bus     0.135831    0.122224      1.1113    0.166162        0.8175
+b_female_rail    0.170783    0.068016      2.5109    0.095194        1.7941
+b_female_air     0.237554    0.082266      2.8876    0.139664        1.7009
+
+
+Overview of choices for MNL model component :
+                                     car     bus     air    rail
+Times available                  5446.00 6314.00 5264.00 6118.00
+Times chosen                     1946.00  358.00 1522.00 3174.00
+Percentage chosen overall          27.80    5.11   21.74   45.34
+Percentage chosen when available   35.73    5.67   28.91   51.88
+
+
+
+Classical covariance matrix:
+                    asc_bus       asc_air      asc_rail      b_tt_car      b_tt_bus      b_tt_air     b_tt_rail
+asc_bus            0.748050      0.183096      0.207617    2.9039e-04     -0.001232    -4.219e-05   -1.5640e-04
+asc_air            0.183096      0.383841      0.219863    3.5748e-04     8.149e-05     -0.001104    -4.941e-06
+asc_rail           0.207617      0.219863      0.422645    3.7994e-04     4.648e-05     6.852e-05     -0.001010
+b_tt_car         2.9039e-04    3.5748e-04    3.7994e-04     6.571e-07     8.805e-08    -2.819e-07    -3.462e-07
+b_tt_bus          -0.001232     8.149e-05     4.648e-05     8.805e-08     2.951e-06    -3.049e-07    -1.080e-07
+b_tt_air         -4.219e-05     -0.001104     6.852e-05    -2.819e-07    -3.049e-07     8.208e-06    -1.351e-06
+b_tt_rail       -1.5640e-04    -4.941e-06     -0.001010    -3.462e-07    -1.080e-07    -1.351e-06     4.435e-06
+b_access          5.026e-05     -0.001010     3.669e-05    -2.298e-07    -5.623e-07     4.073e-06    -1.532e-06
+b_cost_car         0.002306      0.002424      0.002740     2.970e-06    -1.103e-07    -1.238e-06    -2.875e-06
+b_cost_bus        -0.005032    3.5952e-04    1.1842e-04     1.163e-07     8.676e-06    -1.477e-06    -2.276e-07
+b_cost_air        4.672e-07   -6.6792e-04     2.433e-05    -7.209e-08    -1.348e-07     2.723e-06    -6.932e-07
+b_cost_rail      -5.591e-05     8.942e-05   -8.9527e-04    -9.204e-08     1.445e-08    -1.340e-06     3.179e-06
+b_female_bus      -0.006789     -0.001904     -0.001375    -5.112e-07    -1.453e-06     1.111e-06    -9.666e-07
+b_female_rail     -0.001729     -0.001442     -0.002619    -5.997e-07     1.133e-08    -1.491e-06     2.129e-07
+b_female_air      -0.001589     -0.003202     -0.001691    -7.433e-07    -6.806e-07    -5.465e-07     4.937e-07
+                   b_access    b_cost_car    b_cost_bus    b_cost_air   b_cost_rail  b_female_bus b_female_rail
+asc_bus           5.026e-05      0.002306     -0.005032     4.672e-07    -5.591e-05     -0.006789     -0.001729
+asc_air           -0.001010      0.002424    3.5952e-04   -6.6792e-04     8.942e-05     -0.001904     -0.001442
+asc_rail          3.669e-05      0.002740    1.1842e-04     2.433e-05   -8.9527e-04     -0.001375     -0.002619
+b_tt_car         -2.298e-07     2.970e-06     1.163e-07    -7.209e-08    -9.204e-08    -5.112e-07    -5.997e-07
+b_tt_bus         -5.623e-07    -1.103e-07     8.676e-06    -1.348e-07     1.445e-08    -1.453e-06     1.133e-08
+b_tt_air          4.073e-06    -1.238e-06    -1.477e-06     2.723e-06    -1.340e-06     1.111e-06    -1.491e-06
+b_tt_rail        -1.532e-06    -2.875e-06    -2.276e-07    -6.932e-07     3.179e-06    -9.666e-07     2.129e-07
+b_access          8.897e-06    -1.337e-06    -3.493e-06     2.555e-06    -1.382e-06     2.514e-06    -2.798e-06
+b_cost_car       -1.337e-06     3.280e-05    -7.336e-07    -6.656e-07    -1.458e-06    -6.037e-06    -6.449e-06
+b_cost_bus       -3.493e-06    -7.336e-07     8.413e-05    -1.082e-06    -4.182e-07    -6.841e-06     4.806e-07
+b_cost_air        2.555e-06    -6.656e-07    -1.082e-06     4.238e-06    -2.584e-07    -7.039e-07    -1.172e-06
+b_cost_rail      -1.382e-06    -1.458e-06    -4.182e-07    -2.584e-07     6.779e-06    -4.058e-06    -1.126e-06
+b_female_bus      2.514e-06    -6.037e-06    -6.841e-06    -7.039e-07    -4.058e-06      0.014939      0.002597
+b_female_rail    -2.798e-06    -6.449e-06     4.806e-07    -1.172e-06    -1.126e-06      0.002597      0.004626
+b_female_air     -2.923e-06    -5.068e-06     2.822e-06    -3.414e-06    -1.562e-06      0.002815      0.002798
+               b_female_air
+asc_bus           -0.001589
+asc_air           -0.003202
+asc_rail          -0.001691
+b_tt_car         -7.433e-07
+b_tt_bus         -6.806e-07
+b_tt_air         -5.465e-07
+b_tt_rail         4.937e-07
+b_access         -2.923e-06
+b_cost_car       -5.068e-06
+b_cost_bus        2.822e-06
+b_cost_air       -3.414e-06
+b_cost_rail      -1.562e-06
+b_female_bus       0.002815
+b_female_rail      0.002798
+b_female_air       0.006768
+
+Robust covariance matrix:
+                    asc_bus       asc_air      asc_rail      b_tt_car      b_tt_bus      b_tt_air     b_tt_rail
+asc_bus            0.635766      0.179795      0.169860    2.8304e-04     -0.001016    -4.916e-05     9.707e-07
+asc_air            0.179795      0.413348      0.227150    3.8305e-04    1.3215e-04     -0.001106     8.355e-05
+asc_rail           0.169860      0.227150      0.397171    3.6838e-04    1.2587e-04    -5.207e-06   -8.8894e-04
+b_tt_car         2.8304e-04    3.8305e-04    3.6838e-04     6.912e-07     1.611e-07    -3.347e-07    -1.783e-07
+b_tt_bus          -0.001016    1.3215e-04    1.2587e-04     1.611e-07     2.672e-06    -3.396e-07    -2.448e-07
+b_tt_air         -4.916e-05     -0.001106    -5.207e-06    -3.347e-07    -3.396e-07     7.642e-06    -1.369e-06
+b_tt_rail         9.707e-07     8.355e-05   -8.8894e-04    -1.783e-07    -2.448e-07    -1.369e-06     4.226e-06
+b_access          6.318e-05     -0.001009    -1.196e-05    -2.688e-07    -7.122e-07     3.567e-06    -1.532e-06
+b_cost_car         0.002223      0.002777      0.002779     3.219e-06     4.481e-07    -2.676e-06    -2.234e-06
+b_cost_bus        -0.004101    5.2992e-04    3.3780e-04     1.375e-07     6.904e-06    -3.622e-06    -1.038e-06
+b_cost_air       -5.391e-05   -7.4441e-04     2.357e-05    -4.964e-08    -1.419e-08     2.722e-06    -8.826e-07
+b_cost_rail      1.0679e-04    1.5881e-04   -8.0352e-04     3.042e-08    -2.283e-07    -1.320e-06     3.038e-06
+b_female_bus      -0.001428      0.001374      0.003246     1.211e-06    -2.930e-05     1.898e-05    -1.168e-05
+b_female_rail     -0.001141     -0.003405     -0.002238     1.325e-06     1.478e-06     5.807e-06    -3.230e-06
+b_female_air      -0.004897     -0.013137     -0.008846    -8.415e-06    -5.048e-06    -7.765e-06     6.012e-06
+                   b_access    b_cost_car    b_cost_bus    b_cost_air   b_cost_rail  b_female_bus b_female_rail
+asc_bus           6.318e-05      0.002223     -0.004101    -5.391e-05    1.0679e-04     -0.001428     -0.001141
+asc_air           -0.001009      0.002777    5.2992e-04   -7.4441e-04    1.5881e-04      0.001374     -0.003405
+asc_rail         -1.196e-05      0.002779    3.3780e-04     2.357e-05   -8.0352e-04      0.003246     -0.002238
+b_tt_car         -2.688e-07     3.219e-06     1.375e-07    -4.964e-08     3.042e-08     1.211e-06     1.325e-06
+b_tt_bus         -7.122e-07     4.481e-07     6.904e-06    -1.419e-08    -2.283e-07    -2.930e-05     1.478e-06
+b_tt_air          3.567e-06    -2.676e-06    -3.622e-06     2.722e-06    -1.320e-06     1.898e-05     5.807e-06
+b_tt_rail        -1.532e-06    -2.234e-06    -1.038e-06    -8.826e-07     3.038e-06    -1.168e-05    -3.230e-06
+b_access          8.440e-06    -1.725e-06    -2.372e-06     2.911e-06    -1.030e-06    -8.142e-06     1.174e-05
+b_cost_car       -1.725e-06     3.525e-05     6.931e-07    -1.040e-06    -6.072e-07     2.868e-05     1.314e-05
+b_cost_bus       -2.372e-06     6.931e-07     7.876e-05    -1.384e-06    -1.403e-06    -2.727e-05     1.251e-05
+b_cost_air        2.911e-06    -1.040e-06    -1.384e-06     5.774e-06     2.243e-07    -4.357e-06    -4.652e-06
+b_cost_rail      -1.030e-06    -6.072e-07    -1.403e-06     2.243e-07     7.412e-06    -1.917e-05    -9.287e-06
+b_female_bus     -8.142e-06     2.868e-05    -2.727e-05    -4.357e-06    -1.917e-05      0.027610      0.002749
+b_female_rail     1.174e-05     1.314e-05     1.251e-05    -4.652e-06    -9.287e-06      0.002749      0.009062
+b_female_air      1.934e-05    -5.117e-05    1.0163e-04    -4.013e-06    -1.212e-05    -1.192e-05      0.008633
+               b_female_air
+asc_bus           -0.004897
+asc_air           -0.013137
+asc_rail          -0.008846
+b_tt_car         -8.415e-06
+b_tt_bus         -5.048e-06
+b_tt_air         -7.765e-06
+b_tt_rail         6.012e-06
+b_access          1.934e-05
+b_cost_car       -5.117e-05
+b_cost_bus       1.0163e-04
+b_cost_air       -4.013e-06
+b_cost_rail      -1.212e-05
+b_female_bus     -1.192e-05
+b_female_rail      0.008633
+b_female_air       0.019506
+
+Classical correlation matrix:
+                    asc_bus       asc_air      asc_rail      b_tt_car      b_tt_bus      b_tt_air     b_tt_rail
+asc_bus             1.00000      0.341694       0.36924      0.414189     -0.828997     -0.017028     -0.085869
+asc_air             0.34169      1.000000       0.54587      0.711789      0.076568     -0.621795     -0.003787
+asc_rail            0.36924      0.545869       1.00000      0.720955      0.041618      0.036787     -0.737481
+b_tt_car            0.41419      0.711789       0.72096      1.000000      0.063232     -0.121398     -0.202811
+b_tt_bus           -0.82900      0.076568       0.04162      0.063232      1.000000     -0.061959     -0.029852
+b_tt_air           -0.01703     -0.621795       0.03679     -0.121398     -0.061959      1.000000     -0.223863
+b_tt_rail          -0.08587     -0.003787      -0.73748     -0.202811     -0.029852     -0.223863      1.000000
+b_access            0.01948     -0.546733       0.01892     -0.095057     -0.109743      0.476602     -0.243834
+b_cost_car          0.46546      0.683213       0.73588      0.639654     -0.011211     -0.075479     -0.238360
+b_cost_bus         -0.63435      0.063265       0.01986      0.015643      0.550649     -0.056189     -0.011784
+b_cost_air       2.6238e-04     -0.523685       0.01818     -0.043199     -0.038112      0.461651     -0.159890
+b_cost_rail        -0.02483      0.055430      -0.52890     -0.043606      0.003231     -0.179664      0.579725
+b_female_bus       -0.06422     -0.025140      -0.01731     -0.005159     -0.006920      0.003173     -0.003755
+b_female_rail      -0.02940     -0.034213      -0.05924     -0.010877     9.695e-05     -0.007653      0.001486
+b_female_air       -0.02233     -0.062821      -0.03162     -0.011146     -0.004816     -0.002319      0.002850
+                   b_access    b_cost_car    b_cost_bus    b_cost_air   b_cost_rail  b_female_bus b_female_rail
+asc_bus            0.019480      0.465457     -0.634353    2.6238e-04     -0.024827     -0.064223     -0.029396
+asc_air           -0.546733      0.683213      0.063265     -0.523685      0.055430     -0.025140     -0.034213
+asc_rail           0.018921      0.735876      0.019858      0.018183     -0.528901     -0.017306     -0.059235
+b_tt_car          -0.095057      0.639654      0.015643     -0.043199     -0.043606     -0.005159     -0.010877
+b_tt_bus          -0.109743     -0.011211      0.550649     -0.038112      0.003231     -0.006920     9.695e-05
+b_tt_air           0.476602     -0.075479     -0.056189      0.461651     -0.179664      0.003173     -0.007653
+b_tt_rail         -0.243834     -0.238360     -0.011784     -0.159890      0.579725     -0.003755      0.001486
+b_access           1.000000     -0.078275     -0.127665      0.416030     -0.177892      0.006897     -0.013791
+b_cost_car        -0.078275      1.000000     -0.013965     -0.056451     -0.097802     -0.008624     -0.016556
+b_cost_bus        -0.127665     -0.013965      1.000000     -0.057279     -0.017509     -0.006102    7.7036e-04
+b_cost_air         0.416030     -0.056451     -0.057279      1.000000     -0.048200     -0.002797     -0.008367
+b_cost_rail       -0.177892     -0.097802     -0.017509     -0.048200      1.000000     -0.012751     -0.006361
+b_female_bus       0.006897     -0.008624     -0.006102     -0.002797     -0.012751      1.000000      0.312436
+b_female_rail     -0.013791     -0.016556    7.7036e-04     -0.008367     -0.006361      0.312436      1.000000
+b_female_air      -0.011911     -0.010756      0.003740     -0.020159     -0.007291      0.279996      0.499961
+               b_female_air
+asc_bus           -0.022333
+asc_air           -0.062821
+asc_rail          -0.031616
+b_tt_car          -0.011146
+b_tt_bus          -0.004816
+b_tt_air          -0.002319
+b_tt_rail          0.002850
+b_access          -0.011911
+b_cost_car        -0.010756
+b_cost_bus         0.003740
+b_cost_air        -0.020159
+b_cost_rail       -0.007291
+b_female_bus       0.279996
+b_female_rail      0.499961
+b_female_air       1.000000
+
+Robust correlation matrix:
+                    asc_bus       asc_air      asc_rail      b_tt_car      b_tt_bus      b_tt_air     b_tt_rail
+asc_bus             1.00000       0.35073      0.338029      0.426985     -0.779425     -0.022301    5.9225e-04
+asc_air             0.35073       1.00000      0.560616      0.716641      0.125749     -0.622050       0.06322
+asc_rail            0.33803       0.56062      1.000000      0.703090      0.122192     -0.002989      -0.68618
+b_tt_car            0.42699       0.71664      0.703090      1.000000      0.118525     -0.145648      -0.10436
+b_tt_bus           -0.77943       0.12575      0.122192      0.118525      1.000000     -0.075149      -0.07284
+b_tt_air           -0.02230      -0.62205     -0.002989     -0.145648     -0.075149      1.000000      -0.24096
+b_tt_rail        5.9225e-04       0.06322     -0.686181     -0.104357     -0.072843     -0.240960       1.00000
+b_access            0.02728      -0.54004     -0.006530     -0.111289     -0.149983      0.444156      -0.25647
+b_cost_car          0.46965       0.72749      0.742752      0.652169      0.046173     -0.163033      -0.18308
+b_cost_bus         -0.57958       0.09287      0.060396      0.018640      0.475917     -0.147641      -0.05688
+b_cost_air         -0.02813      -0.48183      0.015562     -0.024849     -0.003612      0.409812      -0.17868
+b_cost_rail         0.04919       0.09073     -0.468303      0.013440     -0.051293     -0.175369       0.54284
+b_female_bus       -0.01078       0.01286      0.030997      0.008765     -0.107870      0.041312      -0.03419
+b_female_rail      -0.01503      -0.05564     -0.037298      0.016742      0.009501      0.022067      -0.01651
+b_female_air       -0.04397      -0.14630     -0.100499     -0.072474     -0.022112     -0.020113       0.02094
+                   b_access    b_cost_car    b_cost_bus    b_cost_air   b_cost_rail  b_female_bus b_female_rail
+asc_bus            0.027275       0.46965      -0.57958     -0.028134       0.04919     -0.010778     -0.015032
+asc_air           -0.540041       0.72749       0.09287     -0.481835       0.09073      0.012860     -0.055638
+asc_rail          -0.006530       0.74275       0.06040      0.015562      -0.46830      0.030997     -0.037298
+b_tt_car          -0.111289       0.65217       0.01864     -0.024849       0.01344      0.008765      0.016742
+b_tt_bus          -0.149983       0.04617       0.47592     -0.003612      -0.05129     -0.107870      0.009501
+b_tt_air           0.444156      -0.16303      -0.14764      0.409812      -0.17537      0.041312      0.022067
+b_tt_rail         -0.256471      -0.18308      -0.05688     -0.178685       0.54284     -0.034187     -0.016507
+b_access           1.000000      -0.10000      -0.09200      0.417015      -0.13019     -0.016867      0.042437
+b_cost_car        -0.100002       1.00000       0.01315     -0.072912      -0.03756      0.029075      0.023245
+b_cost_bus        -0.092004       0.01315       1.00000     -0.064884      -0.05806     -0.018495      0.014803
+b_cost_air         0.417015      -0.07291      -0.06488      1.000000       0.03429     -0.010913     -0.020337
+b_cost_rail       -0.130190      -0.03756      -0.05806      0.034289       1.00000     -0.042379     -0.035831
+b_female_bus      -0.016867       0.02907      -0.01849     -0.010913      -0.04238      1.000000      0.173799
+b_female_rail      0.042437       0.02324       0.01480     -0.020337      -0.03583      0.173799      1.000000
+b_female_air       0.047661      -0.06171       0.08199     -0.011958      -0.03187   -5.1343e-04      0.649340
+               b_female_air
+asc_bus            -0.04397
+asc_air            -0.14630
+asc_rail           -0.10050
+b_tt_car           -0.07247
+b_tt_bus           -0.02211
+b_tt_air           -0.02011
+b_tt_rail           0.02094
+b_access            0.04766
+b_cost_car         -0.06171
+b_cost_bus          0.08199
+b_cost_air         -0.01196
+b_cost_rail        -0.03187
+b_female_bus    -5.1343e-04
+b_female_rail       0.64934
+b_female_air        1.00000
+
+ 20 most extreme outliers in terms of lowest average per choice prediction:
+  ID Avg prob per choice
+ 464           0.1858046
+ 457           0.1917511
+  82           0.1994985
+ 151           0.2189520
+ 272           0.2194493
+ 117           0.2209233
+ 478           0.2300392
+ 276           0.2394078
+ 309           0.2451654
+ 293           0.2484746
+ 263           0.2493131
+ 186           0.2514050
+  77           0.2537471
+ 446           0.2616556
+ 400           0.2623792
+ 278           0.2659931
+ 147           0.2660452
+ 304           0.2734382
+ 146           0.2739700
+ 317           0.2761666
+
+Changes in parameter estimates from starting values:
+                  Initial    Estimate  Difference
+asc_car             0.000    0.000000    0.000000
+asc_bus             0.000    2.659537    2.659537
+asc_air             0.000    1.711008    1.711008
+asc_rail            0.000    0.632415    0.632415
+b_tt_car            0.000   -0.008515   -0.008515
+b_tt_bus            0.000   -0.018523   -0.018523
+b_tt_air            0.000   -0.017730   -0.017730
+b_tt_rail           0.000   -0.006387   -0.006387
+b_access            0.000   -0.020716   -0.020716
+b_cost_car          0.000   -0.037863   -0.037863
+b_cost_bus          0.000   -0.078502   -0.078502
+b_cost_air          0.000   -0.053051   -0.053051
+b_cost_rail         0.000   -0.058887   -0.058887
+b_female_car        0.000    0.000000    0.000000
+b_female_bus        0.000    0.135831    0.135831
+b_female_rail       0.000    0.170783    0.170783
+b_female_air        0.000    0.237554    0.237554
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                                    
+modelName              "MNL_SP"                                 
+modelDescr             "Simple MNL model on mode choice RP data"
+indivID                "ID"                                     
+outputDirectory        "output_SP/"                             
+debug                  "FALSE"                                  
+nCores                 "1"                                      
+workInLogs             "FALSE"                                  
+seed                   "13"                                     
+mixing                 "FALSE"                                  
+HB                     "FALSE"                                  
+noValidation           "FALSE"                                  
+noDiagnostics          "FALSE"                                  
+calculateLLC           "TRUE"                                   
+analyticHessian        "FALSE"                                  
+memorySaver            "FALSE"                                  
+panelData              "TRUE"                                   
+analyticGrad           "TRUE"                                   
+analyticGrad_manualSet "FALSE"                                  
+overridePanel          "FALSE"                                  
+preventOverridePanel   "FALSE"                                  
+noModification         "FALSE"                                  
+
+Hessian routines attempted
+--------------------------
+numerical jacobian of LL analytical gradient
+
+Scaling used in computing Hessian
+---------------------------------
+                    Value
+asc_bus       2.659536507
+asc_air       1.711007510
+asc_rail      0.632415075
+b_tt_car      0.008515405
+b_tt_bus      0.018522772
+b_tt_air      0.017729640
+b_tt_rail     0.006387301
+b_access      0.020716097
+b_cost_car    0.037863166
+b_cost_bus    0.078502307
+b_cost_air    0.053051491
+b_cost_rail   0.058886582
+b_female_bus  0.135830677
+b_female_rail 0.170782935
+b_female_air  0.237553640
+
+
+apollo_probabilities
+----------------------
+function(apollo_beta, apollo_inputs, functionality="estimate"){
+  
+  ### Attach inputs and detach after function exit
+  apollo_attach(apollo_beta, apollo_inputs)
+  on.exit(apollo_detach(apollo_beta, apollo_inputs))
+  
+  ### Create list of probabilities P
+  P = list()
+  
+  ### List of utilities: these must use the same names as in mnl_settings, order is irrelevant
+  V = list()
+  V[["car"]]  = asc_car  + b_tt_car  * time_car                           + b_cost_car * cost_car   + b_female_car * female
+  V[["bus"]]  = asc_bus  + b_tt_bus  * time_bus  + b_access * access_bus  + b_cost_bus * cost_bus  + b_female_bus * female
+  V[["air"]]  = asc_air  + b_tt_air  * time_air  + b_access * access_air  + b_cost_air * cost_air   + b_female_air * female
+  V[["rail"]] = asc_rail + b_tt_rail * time_rail + b_access * access_rail + b_cost_rail * cost_rail   + b_female_rail * female
+  
+  ### Define settings for MNL model component
+  mnl_settings = list(
+    alternatives  = c(car=1, bus=2, air=3, rail=4), 
+    avail         = list(car=av_car, bus=av_bus, air=av_air, rail=av_rail), 
+    choiceVar     = choice,
+    utilities     = V
+  )
+  
+  ### Compute probabilities using MNL model
+  P[["model"]] = apollo_mnl(mnl_settings, functionality)
+  
+  ### Take product across observation for same individual
+  P = apollo_panelProd(P, apollo_inputs, functionality)
+  
+  ### Prepare and return outputs of function
+  P = apollo_prepareProb(P, apollo_inputs, functionality)
+  return(P)
+}

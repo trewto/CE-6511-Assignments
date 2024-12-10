@@ -1,0 +1,592 @@
+Model run by User using Apollo 0.3.4 on R 4.4.1 for Windows.
+Please acknowledge the use of Apollo by citing Hess & Palma (2019)
+  DOI 10.1016/j.jocm.2019.100170
+  www.ApolloChoiceModelling.com
+
+Model name                                  : MNL_SP
+Model description                           : Simple MNL model on mode choice RP data
+Model run at                                : 2024-12-11 03:22:41.769007
+Estimation method                           : bgw
+Model diagnosis                             : Singular convergence
+Number of individuals                       : 500
+Number of rows in database                  : 7000
+Number of modelled outcomes                 : 7000
+
+Number of cores used                        :  1 
+Model without mixing
+
+LL(start)                                   : -8196.02
+LL at equal shares, LL(0)                   : -8196.02
+LL at observed shares, LL(C)                : -6706.94
+LL(final)                                   : -5760.93
+Rho-squared vs equal shares                  :  0.2971 
+Adj.Rho-squared vs equal shares              :  0.2955 
+Rho-squared vs observed shares               :  0.141 
+Adj.Rho-squared vs observed shares           :  0.1396 
+AIC                                         :  11547.87 
+BIC                                         :  11636.97 
+
+Estimated parameters                        : 13
+Time taken (hh:mm:ss)                       :  00:00:0.7 
+     pre-estimation                         :  00:00:0.31 
+     estimation                             :  00:00:0.29 
+     post-estimation                        :  00:00:0.1 
+Iterations                                  :  9 (Singular convergence) 
+
+Unconstrained optimisation.
+
+Estimates:
+                 Estimate        s.e.   t.rat.(0)
+asc_car          0.000000          NA          NA
+asc_bus          0.098328          NA          NA
+asc_air          0.906035          NA          NA
+asc_rail        -1.153533          NA          NA
+b_tt_car        -0.009963          NA          NA
+b_tt_bus        -0.016010          NA          NA
+b_tt_air        -0.019217          NA          NA
+b_tt_rail       -0.003137          NA          NA
+b_access        -0.022648          NA          NA
+b_cost          -0.054649          NA          NA
+b_female_car     2.680793          NA          NA
+b_female_bus     2.815860          NA          NA
+b_female_rail    2.854974          NA          NA
+b_female_air     2.922286          NA          NA
+                 Rob.s.e. Rob.t.rat.(0)
+asc_car                NA            NA
+asc_bus                NA            NA
+asc_air                NA            NA
+asc_rail               NA            NA
+b_tt_car               NA            NA
+b_tt_bus               NA            NA
+b_tt_air               NA            NA
+b_tt_rail              NA            NA
+b_access               NA            NA
+b_cost                 NA            NA
+b_female_car           NA            NA
+b_female_bus           NA            NA
+b_female_rail          NA            NA
+b_female_air           NA            NA
+
+
+Overview of choices for MNL model component :
+                                     car     bus
+Times available                  5446.00 6314.00
+Times chosen                     1946.00  358.00
+Percentage chosen overall          27.80    5.11
+Percentage chosen when available   35.73    5.67
+                                     air    rail
+Times available                  5264.00 6118.00
+Times chosen                     1522.00 3174.00
+Percentage chosen overall          21.74   45.34
+Percentage chosen when available   28.91   51.88
+
+
+
+Classical covariance matrix:
+                    asc_bus       asc_air
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                   asc_rail      b_tt_car
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                   b_tt_bus      b_tt_air
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                  b_tt_rail      b_access
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                     b_cost  b_female_car
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+               b_female_bus b_female_rail
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+               b_female_air
+asc_bus                  NA
+asc_air                  NA
+asc_rail                 NA
+b_tt_car                 NA
+b_tt_bus                 NA
+b_tt_air                 NA
+b_tt_rail                NA
+b_access                 NA
+b_cost                   NA
+b_female_car             NA
+b_female_bus             NA
+b_female_rail            NA
+b_female_air             NA
+
+Robust covariance matrix:
+                    asc_bus       asc_air
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                   asc_rail      b_tt_car
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                   b_tt_bus      b_tt_air
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                  b_tt_rail      b_access
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                     b_cost  b_female_car
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+               b_female_bus b_female_rail
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+               b_female_air
+asc_bus                  NA
+asc_air                  NA
+asc_rail                 NA
+b_tt_car                 NA
+b_tt_bus                 NA
+b_tt_air                 NA
+b_tt_rail                NA
+b_access                 NA
+b_cost                   NA
+b_female_car             NA
+b_female_bus             NA
+b_female_rail            NA
+b_female_air             NA
+
+Classical correlation matrix:
+                    asc_bus       asc_air
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                   asc_rail      b_tt_car
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                   b_tt_bus      b_tt_air
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                  b_tt_rail      b_access
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                     b_cost  b_female_car
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+               b_female_bus b_female_rail
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+               b_female_air
+asc_bus                  NA
+asc_air                  NA
+asc_rail                 NA
+b_tt_car                 NA
+b_tt_bus                 NA
+b_tt_air                 NA
+b_tt_rail                NA
+b_access                 NA
+b_cost                   NA
+b_female_car             NA
+b_female_bus             NA
+b_female_rail            NA
+b_female_air             NA
+
+Robust correlation matrix:
+                    asc_bus       asc_air
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                   asc_rail      b_tt_car
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                   b_tt_bus      b_tt_air
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                  b_tt_rail      b_access
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+                     b_cost  b_female_car
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+               b_female_bus b_female_rail
+asc_bus                  NA            NA
+asc_air                  NA            NA
+asc_rail                 NA            NA
+b_tt_car                 NA            NA
+b_tt_bus                 NA            NA
+b_tt_air                 NA            NA
+b_tt_rail                NA            NA
+b_access                 NA            NA
+b_cost                   NA            NA
+b_female_car             NA            NA
+b_female_bus             NA            NA
+b_female_rail            NA            NA
+b_female_air             NA            NA
+               b_female_air
+asc_bus                  NA
+asc_air                  NA
+asc_rail                 NA
+b_tt_car                 NA
+b_tt_bus                 NA
+b_tt_air                 NA
+b_tt_rail                NA
+b_access                 NA
+b_cost                   NA
+b_female_car             NA
+b_female_bus             NA
+b_female_rail            NA
+b_female_air             NA
+
+ 20 most extreme outliers in terms of lowest average per choice prediction:
+  ID Avg prob per choice
+ 464           0.1876565
+ 457           0.1878141
+  82           0.1998469
+ 272           0.2154104
+ 151           0.2204787
+ 117           0.2231747
+ 478           0.2259409
+ 309           0.2425459
+ 263           0.2455390
+ 276           0.2461272
+  77           0.2491899
+ 186           0.2499936
+ 278           0.2535851
+ 293           0.2537321
+ 400           0.2541331
+ 446           0.2684388
+ 147           0.2686742
+ 304           0.2702984
+ 317           0.2707674
+ 369           0.2726834
+
+Changes in parameter estimates from starting values:
+                  Initial    Estimate  Difference
+asc_car             0.000    0.000000    0.000000
+asc_bus             0.000    0.098328    0.098328
+asc_air             0.000    0.906035    0.906035
+asc_rail            0.000   -1.153533   -1.153533
+b_tt_car            0.000   -0.009963   -0.009963
+b_tt_bus            0.000   -0.016010   -0.016010
+b_tt_air            0.000   -0.019217   -0.019217
+b_tt_rail           0.000   -0.003137   -0.003137
+b_access            0.000   -0.022648   -0.022648
+b_cost              0.000   -0.054649   -0.054649
+b_female_car        0.000    2.680793    2.680793
+b_female_bus        0.000    2.815860    2.815860
+b_female_rail       0.000    2.854974    2.854974
+b_female_air        0.000    2.922286    2.922286
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                                    
+modelName              "MNL_SP"                                 
+modelDescr             "Simple MNL model on mode choice RP data"
+indivID                "ID"                                     
+outputDirectory        "output_SP/"                             
+debug                  "FALSE"                                  
+nCores                 "1"                                      
+workInLogs             "FALSE"                                  
+seed                   "13"                                     
+mixing                 "FALSE"                                  
+HB                     "FALSE"                                  
+noValidation           "FALSE"                                  
+noDiagnostics          "FALSE"                                  
+calculateLLC           "TRUE"                                   
+analyticHessian        "FALSE"                                  
+memorySaver            "FALSE"                                  
+panelData              "TRUE"                                   
+analyticGrad           "TRUE"                                   
+analyticGrad_manualSet "FALSE"                                  
+overridePanel          "FALSE"                                  
+preventOverridePanel   "FALSE"                                  
+noModification         "FALSE"                                  
+
+Hessian routines attempted
+--------------------------
+none
+
+
+apollo_probabilities
+----------------------
+function(apollo_beta, apollo_inputs, functionality="estimate"){
+  
+  ### Attach inputs and detach after function exit
+  apollo_attach(apollo_beta, apollo_inputs)
+  on.exit(apollo_detach(apollo_beta, apollo_inputs))
+  
+  ### Create list of probabilities P
+  P = list()
+  
+  ### List of utilities: these must use the same names as in mnl_settings, order is irrelevant
+  V = list()
+  V[["car"]]  = asc_car  + b_tt_car  * time_car                           + b_cost * cost_car   + b_female_car * female
+  V[["bus"]]  = asc_bus  + b_tt_bus  * time_bus  + b_access * access_bus  + b_cost * cost_bus  + b_female_bus * female
+  V[["air"]]  = asc_air  + b_tt_air  * time_air  + b_access * access_air  + b_cost * cost_air   + b_female_air * female
+  V[["rail"]] = asc_rail + b_tt_rail * time_rail + b_access * access_rail + b_cost * cost_rail   + b_female_rail * female
+  
+  ### Define settings for MNL model component
+  mnl_settings = list(
+    alternatives  = c(car=1, bus=2, air=3, rail=4), 
+    avail         = list(car=av_car, bus=av_bus, air=av_air, rail=av_rail), 
+    choiceVar     = choice,
+    utilities     = V
+  )
+  
+  ### Compute probabilities using MNL model
+  P[["model"]] = apollo_mnl(mnl_settings, functionality)
+  
+  ### Take product across observation for same individual
+  P = apollo_panelProd(P, apollo_inputs, functionality)
+  
+  ### Prepare and return outputs of function
+  P = apollo_prepareProb(P, apollo_inputs, functionality)
+  return(P)
+}
